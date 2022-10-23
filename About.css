@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding:30px 100px ;
+   width: 100%; 
+ height: 80px;
+ /* background-color: red;    */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .search{
+    position: relative;
+}
+
+header .search input{
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    margin-left: 5px;
+    color: #606770;
+    font-size: 15px;
+    padding: 10px 35px;
+    transition: all 0.4s;
+ 
+}
+
+header .search input:hover{
+transform:translateX(-8px);
+}
+
+
+header .search input:focus{
+outline: none;
+}
+
+header .search .fa-magnifying-glass{
+position: absolute;
+left: 10px;
+top: 12px;
+font-size: 15px;
+color: #606770;
+}
+header .icons{
+    display: flex;
+    align-items: center;
+}
+header .icons .active{
+   position: relative;
+
+}
+
+header .icons .active .circle{
+    position: absolute;
+    top: -17px;
+    right: -14px;
+    width: 25px;
+    height: 25px;
+    background-color:blueviolet;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+header .name{
+border: 3px solid #000;
+padding: 5px 10px;
+transform: translatex(-50%);
+
+} 
+
+
+
+header .name h1{
+font-weight: bold;
+font-size: 20px;
+color: #000;
+}
+
+
+
+header .icons i{
+font-size: 15px;
+padding: 6px;
+color: #606770;
+transition: all 0.4s;
+}
+
+header .icons i:hover{
+ color: #000;  
+ transform: scale(1.1);
+}
+
+
+hr{
+opacity: 0.3;    
+}
+
+/* nav bar */
+/* ========================================================== */
+
+nav{
+    padding: 30px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+nav .home{
+display: flex;
+align-items: center;
+padding-right: 10px;
+}
+nav .Home a{
+color: blueviolet;
+}
+
+nav   .fa-angle-down{
+  font-size: 15px;
+
+}
+
+nav .About{
+display: flex;
+align-items: center;
+padding-right: 15px;
+}
+nav a{
+  text-decoration: none ;
+  color: #000;
+  font-weight: 600;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+nav a:hover{
+color: blueviolet;
+}
+/* Home */
+/* ================================================= */
+
+.home{
+    height: 56px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.home .link {
+    margin-right : 6px;
+    text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.home a {
+    text-decoration: none;
+color: #000;
+margin-left: 6px;
+font-weight: bold;
+
+}
+
+/* About content  */
+
+
+/* =============================================== */
+
+
+.sale{
+    padding: 80px 20px;
+    
+}
+
+.sale .line{
+    position: absolute;
+    top: 0px;
+width: 40px;
+    height: 4px;
+    margin-bottom: 40px;
+    background-color: blueviolet;
+}
+
+.sale-container{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.sale-container .photo{
+width: 550px;
+margin:0  50px;
+position: relative;
+
+}
+
+.sale-container .photo img{
+width: 100%;
+
+}
+.sale-container  .photo::after{
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+width: 70px;
+height: 70px;
+background-color: #fff;
+border-radius: 50%;
+}
+
+.sale-container  .sale-content{
+    position: relative;
+width: 500px;
+height: 370px;
+padding: 30px 20px;
+margin: 0px 30px;
+
+
+}
+
+.sale-container  .sale-content h1{
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+margin-top: -10px;
+}
+
+.sale-container  .sale-content p{
+    line-height: 20px;
+font-weight: 500;
+margin-bottom: 30px;
+margin-top: -10px;
+}
+
+/* Team */
+/* ============================================== */
+
+.team{
+    padding: 50px 20px;
+}
+.team .team-container{
+    padding: 50px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.team .team-content{
+
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+}
+.team .team-content img{
+width: 100px;
+border-radius: 50%;
+}
+
+.team .team-content .team-info{
+margin-top: 20px;
+}
+
+.team .team-content p{
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+.team .team-content .team-info h1{
+font-size: 20px;
+
+}
+.team .team-content .team-info p{
+    margin-top: 2px;
+    font-size: 15px;
+opacity: 0.7;
+
+}
+
+.team .line{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+width: 40px;
+    height: 4px;
+    margin-bottom: 40px;
+    background-color: blueviolet;
+}
+
+.team h1{
+text-align: center;
+margin-top: 20px;
+}
+
+
+/* main */
+/* ============================================= */
+.main{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .main  .image{
+    flex-basis: 50%;
+    
+    }
+    
+    .main .image img{
+    width: 100%;
+    }
+    
+    .main-content{
+    flex-basis: 30%;
+    }
+    
+    .main-content h1{
+    font-size: 60px;
+    
+    }
+    
+    .main-content p{
+    margin-top: 20px;
+    font-weight: 300px;
+    line-height: 25px;
+    
+    
+    }
+    
+    .main-content button{
+     background-color: slateblue;
+     color: #fff;
+     padding: 10px 15px; 
+     border: none;  
+     margin-top: 30px;
+     border-radius: 3px;
+    transition: all 0.4s;
+    }
+    
+    .main-content button:hover{
+    transform:translateY(-5px);
+    
+    background-color: blueviolet;
+    box-shadow: 0px 17px 11px 0px rgb(0 0 0 / 25%);
+    
+    }
+    
+    /* section info */
+/* =============================================== */
+
+.info{
+    padding: 80px 20px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.info .box{
+width: 400px;
+/* flex-basis: 28%; */
+margin-right: 20px;
+}
+.info .box .box-content{
+display: flex;
+align-items: center;
+}
+
+.info .box .box-content h1{
+font-size: 20px;
+}
+
+.info .box  i{
+font-size: 30px;
+color: blueviolet;
+margin-right: 20px;
+}
+.info .box  p{
+margin-left: 50px;
+margin-top: 10px;
+font-weight: 300;
+line-height: 25px;
+}
+
+
+
+   /* footer */
+/* ========================================== */
+
+
+footer{
+    padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  footer .col{
+    width: 240px;
+    /* border: 2px solid red; */
+  }
+  footer .col h1{
+    font-size: 20px;
+    font-weight: bold;
+  margin-bottom: 10px;
+  
+  }
+  
+  footer .col .footer-content p{
+  margin-bottom: 10px;
+  }
+  
+  footer .colun .footer-content img{
+    width: 200px;
+    height: 89px;
+    }
+    
+    footer .colun{
+      /* border: 2px solid red; */
+      height: 150px;
+      width: 240px;
+      margin-right: 20px;
+    }
+  
+    footer .colun h1{
+      font-size: 20px;
+      font-weight: bold;
+    margin-bottom: 10px;
+    }
+  
+    footer .colun h3{
+  color: blueviolet;
+  margin-top: 10px;
+    }
+  
+    footer .colun p{
+    margin-top: 20px;
+    font-weight: 500;
+    opacity: 0.7;
+    }
+  
+  
+    footer .colun2{
+      /* border: 2px solid red; */
+      height: 150px;
+      width: 240px;
+    }
+  
+    footer .colun2 h1{
+    font-size: 20px;
+    font-weight: bold;
+  
+  
+    }
+    footer .colun2 .information {
+  display: flex;
+  margin-top: 10px;
+    }
+  
+    footer .colun2 .information i{
+  color: blueviolet;
+  margin-right: 5px;
+    }
+  
+    footer .colun2 .input{
+      margin-top: 10px;
+      display: flex;
+  position: relative;
+    }
+    footer .colun2 .Email input{
+     height: 35px;
+   width: 100%;
+   
+    }
+  
+    footer .colun2 .Email h2{
+  color: blueviolet;
+  margin-top: 10px;
+  font-size: 20px;
+    }
+    footer .colun2 .Email input:focus{
+  outline: none;
+  
+    }
+  
+    footer .colun2 .input button{
+      margin-top: 20px;
+      background-color: slateblue;
+      color: #fff;
+      padding: 9px 15px; 
+      border: none;  
+      margin-top: 30px;
+      border-radius: 3px;
+     transition: all 0.4s;
+     transform: translateY(-90%);
+  
+    }
+  
